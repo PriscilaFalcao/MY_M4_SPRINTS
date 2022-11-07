@@ -1,6 +1,6 @@
 // Leitura de 20 medidas e respostas por medição
 int buttonRead(){
- if (buttonState == HIGH){
+ if (buttonState == LOW){
     for (int a; a < 10; a++){
       int analogValue = analogRead(LIGHT_SENSOR_PIN);
       int convertValue = convertScale(analogValue);

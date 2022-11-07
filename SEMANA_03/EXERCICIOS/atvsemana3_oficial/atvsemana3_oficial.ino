@@ -1,11 +1,11 @@
 #define LIGHT_SENSOR_PIN 7
 #define BUTTON_PIN 21
 #define BUTTON2_PIN 20
-#define BUZZER_PIN  18
+#define BUZZER_PIN  3
 #define LED_YELLOW 15 
 #define LED_BLUE 16
 #define LED_RED 17
-#define LED_GREEN 18
+#define LED_GREEN 8
 
 // ------------------------- Variáveis Globais ------------------------------------
 int array[10][4];

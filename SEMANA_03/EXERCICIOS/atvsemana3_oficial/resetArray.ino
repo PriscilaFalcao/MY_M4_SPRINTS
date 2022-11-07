@@ -1,6 +1,5 @@
 // Resetar array
 int resetArray(){
-    responseLed();
     if (buttonState2 == LOW){
       responseLed();
       for (int a; a < 10; a++){
