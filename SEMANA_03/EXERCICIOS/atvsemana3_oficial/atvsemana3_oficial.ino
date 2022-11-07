@@ -5,7 +5,7 @@
 #define LED_YELLOW 15 
 #define LED_BLUE 16
 #define LED_RED 17
-#define LED_GREEN 18
+#define LED_GREEN 8
 
 // ------------------------- Variáveis Globais ------------------------------------
 int array[10][4];
