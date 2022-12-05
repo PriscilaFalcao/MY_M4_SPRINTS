@@ -20,3 +20,8 @@ Jogo proposto para o exercício da semana 7. O jogo consiste em um desafio de 2 
 |--> Imagens<br>
 |--> Vídeo<br>
 | readme.md<br>
+
+## ⚠️IMPORTANTE⚠️
+Como é possível ver no vídeo presente na pasta "Vídeo", não se aplica o uso da plaquinha, pois essa não está funcionando. O vídeo apresenta um código simples de ascender LED, e o erro que apresenta independente de qualquer código que se envia para a plaquinha, além de porta e entradas.
+
+O código para a conexão dos servidores está presente nas pastas.
