@@ -1,3 +1,5 @@
+import { player } from '../frontend/script';
+
 const express = require('express'); 
 const app = express();
 const port = 5000;
@@ -49,7 +51,7 @@ wsServer.on('request', function(request) {
     connection.on('message', function(message) {
         if (message.type === 'utf8') {
             console.log('Received Message: ' + message.utf8Data);
-            connection.sendUTF("Hello from node.js");
+            connection.sendUTF(player); // Envia o jogador para a plaquinha
         }
         else if (message.type === 'binary') {
             console.log('Received Binary Message of ' + message.binaryData.length + ' bytes');

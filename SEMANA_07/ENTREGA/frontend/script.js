@@ -1,5 +1,5 @@
 // ================= GLOBAL ==================
-var player = true;
+export var player = true;
 var p1 = 0;
 var p2 = 0;
 var rightAnswer = 0;
