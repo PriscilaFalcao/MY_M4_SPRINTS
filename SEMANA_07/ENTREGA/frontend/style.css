@@ -1,0 +1,239 @@
+/* ===================DEFINITIONS====================== */
+
+/* fonts */
+@font-face {
+    font-family: font1;
+    src: url(resource/GermaniaOne-Regular.ttf);
+}
+
+/* Colors */
+*{
+    --lightgreen: #e1fff8;
+    --green: #14b5b2;
+    --lightpink: #ffd9fc;
+    --purple: #75447c;
+    --coral: #ec7c7a;
+}
+
+
+body{
+   height: 83vh;
+   margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+/* ===================== BODY =============================*/
+.bodymain{
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: var(--lightgreen);
+    margin: 0%;
+    border: var(--green);
+    border-width: 60px; 
+    border-style: solid;
+    position: static;
+}
+
+/* ================== INITIAL SCREEN ===================== */
+
+.bodymain .butterfly{
+    width: 100%;
+    height: 20%;
+    position: sticky;
+}
+
+.bodymain .butterfly .butterflyImg{
+    float: right;
+    max-width:100px;
+    width: auto;
+    height: auto;
+}
+
+.bodymain .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodymain .logo .logoImg{
+    max-width:300px;
+    width: auto;
+    height: auto;
+}
+
+.bodymain .btnDiv{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodymain .btnDiv .btn, .btnAnswer .btn{
+    margin: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--lightpink);
+    border-radius: 20px;
+    font-family: font1;
+    font-size: 32px;
+    color: var(--purple);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bodymain .btnDiv .btn:hover{
+    background-color: #ebbee7;
+    cursor: pointer;
+}
+
+.bodymain .butterfly2{
+    position: relative;
+}
+
+.bodymain .butterfly2 .butterflyImg2{
+    float: left;
+    max-width:100px;
+    width: auto;
+    height: auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  
+}
+
+/* ==================== HELP SCREEN ============================ */
+.bodymain .title{
+    font-family: font1;
+    color: var(--purple);
+    font-size: 50px;
+    padding: 10px 20px;
+}
+
+.bodymain .text{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--purple);
+    padding: 0px 350px 0px 60px;
+    text-align: justify;
+}
+
+.return{
+    margin: 10px;
+    position: absolute;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--lightpink);
+    border-radius: 20px;
+    font-family: font1;
+    font-size: 12px;
+    color: var(--purple);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+/* =================== GAME SCREEN ======================== */
+
+.bodymain .scoreboard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.bodymain .playerTime{
+    margin-right: 400px;
+    font-family: font1;
+    color: var(--purple);
+}
+
+.bodymain .scoreboard1{
+    font-family: font1;
+    color: var(--purple);
+    margin-right: 80px;
+}
+
+.loader {
+    border: 24px solid;
+    border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: animloader 6s linear infinite;
+    margin-right: 440px;
+  }
+
+@keyframes animloader {
+    0% {
+      border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) #75447c9b var(--purple);
+}
+    33% {
+      border-color: var(--purple) rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25)  #75447c9b;
+}
+    66% {
+      border-color:  #75447c9b var(--purple) rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25);
+}
+    100% {
+      border-color: rgba(255, 255, 255, 0.25)  #75447c9b var(--purple) rgba(255, 255, 255, 0.15);
+}
+  }
+
+.bodymain .count{
+    width: 500px;
+    height: 200px;
+    background-color: #14b5b242;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 2em 15em 0em 20em;
+}
+
+.bodymain .count .equation{
+    font-family: font1;
+    font-size: 60px;
+    color: var(--purple);
+}
+
+.bodymain .btnAnswer{
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+
+.popup{
+    position: absolute;
+    display: none;
+    margin: 5em 22em;
+    width: 30%;
+    z-index: 1;
+}
+.popup .msgPopup{
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--lightpink);
+    color: #75447c;
+    font-family: font1;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.popup .msgPopup .btnAgain{
+    width: 20%;
+    background-color: var(--purple);
+    color: var(--green);
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    font-family: font1;
+    padding: 5px;
+}
+
+
+
+

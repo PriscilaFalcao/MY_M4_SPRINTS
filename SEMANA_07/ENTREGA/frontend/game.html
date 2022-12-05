@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resource/favicon.ico" type="image/x-icon">
+</head>
+<body onload="game()">
+    <main class="bodymain">
+        <div class="popup">
+            <div class="msgPopup">
+            <h1 id="winner">Vitória de Player 1!</h1>
+            <p id="score"></p>
+            <button class="btnAgain" onclick="game()">Jogar novamente</button>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <span class="loader"></span>
+            <h1 class="playerTime" id="playerTime">PLAYER 1</h1>
+            <h2 class="scoreboard1" id="scoreboard1"> 0 x 0</h2>
+        </div>
+        <div class="count">
+            <h3 id="countID" class="equation"></h3>
+        </div>
+        <div class="btnAnswer">
+            <button class="option1 btn" id="option0" onclick="answer(this.id)"></button>
+            <button class="option2 btn" id="option1" onclick="answer(this.id)"></button>
+            <button class="option3 btn" id="option2" onclick="answer(this.id)"></button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
